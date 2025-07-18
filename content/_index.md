@@ -53,7 +53,7 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  - block: page      # <--- Add this line
+  - block: markdown      # <--- Add this line
     content:         # <--- Add this line and indent 'page:'
       page: experience
     design:
