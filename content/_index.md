@@ -24,8 +24,8 @@ sections:
         Among my contributions to the open-source software communitiy, I worked with <a href="https://www.ontocord.ai/">Ontocord</a> to create the multilingual Large Language Model <a href="https://huggingface.co/blog/mayank-mishra/aurora">Aurora-M</a>.
         Previously, I took a small part in the LAION <a href="https://open-assistant.io/team">OpenAssistant</a> project.
 
-        [X](https://x.com/MrColeslaw972){.btn .btn-outline}
-        [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en){.btn .btn-outline}
+        ## Links
+        [X](https://x.com/MrColeslaw972) | [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en)
     design:
       columns: '1'
       text_align: center
