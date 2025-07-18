@@ -1,0 +1,63 @@
+{{/* Hugo Blox: Biography section */}}
+{{/* Load page and user biography */}}
+{{ $page := .page }}
+{{ $user_id := .content.username }}
+{{ $user := $page.GetPage (printf "authors/%s" $user_id) }}
+{{ if not $user }}
+  {{ errorf "The user profile `authors/%s` was not found. Please create it at `content/authors/%s`." $user_id $user_id }}
+{{end}}
+{{ $person_name := $user.Title }}
+{{ $avatar := ($user.Resources.ByType "image").GetMatch "avatar" }}
+{{ $interests := $user.Params.interests }}
+{{ $education := $user.Params.education }}
+
+<div class="resume-biography px-3 flex flex-col md:flex-row justify-center gap-12">
+  {{/* Avatar and details. */}}
+  <div class="flex-none m-w-[130px] mx-auto md:mx-0">
+    <div id="profile" class="flex justify-center items-center flex-col">
+      {{ if $avatar }}
+      <div class="avatar-wrapper mt-10">
+        <img class="avatar rounded-full bg-white dark:bg-gray-800 p-1" src="{{ $avatar.RelPermalink }}" alt="{{ $person_name }}" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}">
+      </div>
+      {{ end }}
+      <div class="portrait-title dark:text-white">
+        <div class="text-3xl font-bold mb-2 mt-6">{{ $user.Title }}</div>
+        {{ with $user.Params.role }}<h3 class="font-semibold mb-1">{{ . }}</h3>{{ end }}
+        {{ with $user.Params.organizations }}
+        <div class="mb-2">
+          {{ range . }}
+          <a href="{{ .url | absURL }}" target="_blank" rel="noopener">
+            <div>{{ .name }}</div>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "social_links" (dict "user" $user "class" "network-icon dark:text-zinc-100" "style" "height:1.5rem") }}
+    </div>
+  </div>
+  {{/* Biography */}}
+  <div class="flex-auto max-w-prose md:mt-12">
+    <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">
+      {{ with .content.text }}<div class="bio-text">{{ . | $page.RenderString | emojify }}</div>{{ end }}
+      {{ if gt (len $user.Content) 0 }}<div class="bio-text">{{ $user.Content | $page.RenderString | emojify }}</div>{{ end }}
+    </div>
+    <div class="grid grid-cols-1 {{if and $education $interests}}md:grid-cols-2{{end}} gap-4 justify-between mt-6 dark:text-gray-300">
+      {{ with $interests }}
+      <div>
+        <div class="section-subheading mb-3">{{ i18n "interests" | default "Interests" }}</div>
+        <ul class="flex flex-wrap gap-2 text-sm">
+          {{ range . }}
+          <li class="p-2.5 bg-gray-100 dark:bg-gray-800 rounded-md">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}    
+    </div>
+    {{ with .content.button }}
+    <div class="mt-8">
+      <a href="{{ .url | absLangURL }}" class="btn btn-primary">{{ .text }}</a>
+    </div>
+    {{ end }}
+  </div>
+</div>
