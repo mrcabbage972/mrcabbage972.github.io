@@ -59,7 +59,7 @@ education:
     summary: |
       Thesis on spectral methods for image denoising. Supervised by [Prof Yoel Shkolnisky](https://sites.google.com/site/yoelshkolnisky/). 
   - area: Computer Sciences and Mathematics
-    institution: Tel Aviv University
+    institution: Bar Ilan University
     date_start: 2003-09-30
     date_end: 2005-07-01
     
