@@ -16,7 +16,6 @@ sections:
       subtitle: ""
       text: |                
         ## About Me
-        ![Avatar](/content/authors/admin/avatar.jpg)
 
         Hello Internet.
 
@@ -26,7 +25,7 @@ sections:
         Previously, I took a small part in the LAION <a href="https://open-assistant.io/team">OpenAssistant</a> project.
 
         ## Links
-        [X](https://x.com/MrColeslaw972) | [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en)
+        [X](https://x.com/MrColeslaw972) | [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822)
     design:
       columns: '1'
       text_align: center
