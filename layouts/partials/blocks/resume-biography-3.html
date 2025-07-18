@@ -1,11 +1,8 @@
-{{/* Hugo Blox: Biography section */}}
-{{/* Load page and user biography */}}
+{{/* Hugo Blox: Biography section - CORRECTED OVERRIDE */}}
 {{ $page := .page }}
 {{ $user_id := .content.username }}
 {{ $user := $page.GetPage (printf "authors/%s" $user_id) }}
-{{ if not $user }}
-  {{ errorf "The user profile `authors/%s` was not found. Please create it at `content/authors/%s`." $user_id $user_id }}
-{{end}}
+{{ if not $user }}{{ errorf "The user profile `authors/%s` was not found. Please create it at `content/authors/%s`." $user_id $user_id }}{{end}}
 {{ $person_name := $user.Title }}
 {{ $avatar := ($user.Resources.ByType "image").GetMatch "avatar" }}
 {{ $interests := $user.Params.interests }}
@@ -36,6 +33,7 @@
       {{ partial "social_links" (dict "user" $user "class" "network-icon dark:text-zinc-100" "style" "height:1.5rem") }}
     </div>
   </div>
+
   {{/* Biography */}}
   <div class="flex-auto max-w-prose md:mt-12">
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">
@@ -52,7 +50,27 @@
           {{ end }}
         </ul>
       </div>
-      {{ end }}    
+      {{ end }}
+
+      {{/* --- This entire education block is now commented out --- */}}
+      {{/*
+      {{ with $education }}
+      <div>
+        <div class="section-subheading mb-3">{{ i18n "education" | default "Education" }}</div>
+        <ul>
+          {{ range . }}
+          <li class="flex items-start gap-3">
+            <svg style="" class="flex-shrink-0 w-5 h-5 me-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436.0 00-.491 6.347A48.627 48.627.0 0112 20.904a48.627 48.627.0 018.232-4.41 60.46 60.46.0 00-.491-6.347m-15.482.0a50.57 50.57.0 00-2.658-.813A59.905 59.905.0 0112 3.493a59.902 59.902.0 0110.399 5.84 51.39 51.39.0 00-2.658.814m-15.482.0A50.697 50.697.0 0112 13.489a50.702 50.702.0 017.74-3.342M6.75 15a.75.75.0 100-1.5.75.75.0 000 1.5m0 0v-3.675A55.378 55.378.0 0112 8.443m-7.007 11.55A5.981 5.981.0 006.75 15.75v-1.5"/></svg>
+            <div class="description">
+              <p class="course">{{ .area }}</p>
+              <p class="text-sm">{{ .institution }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      */}}
     </div>
     {{ with .content.button }}
     <div class="mt-8">
