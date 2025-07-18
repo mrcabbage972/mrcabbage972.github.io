@@ -33,8 +33,6 @@ sections:
       columns: '1'
       text_align: center
       css_class: dark
-      background:
-       color: black
 
   # - block: resume-biography-3
   #   content:
