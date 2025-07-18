@@ -64,12 +64,31 @@ education:
     date_end: 2005-07-01
     
 work:
-  - position: Staff SWE
+  - position: Staff Software Engineer
     company_name: Google
     company_url: ''
     company_logo: ''
     date_start: 2024-06-26
     date_end: ''
+  - position: ML Engineering Manager
+    company_name: Chegg
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-07-01
+    date_end: 2024-05-15
+  - position: Staff ML Engineer
+    company_name: Chegg
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-04-01
+    date_end: 2023-07-01
+  - position: Senior ML Engineer
+    company_name: Taboola
+    company_url: ''
+    company_logo: ''
+    date_start: 2015-05-01
+    date_end: 2022-03-01
+  
     # summary: |2-
     #   Responsibilities include:
     #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
