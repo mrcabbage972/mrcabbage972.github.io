@@ -40,9 +40,9 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {2025} Me. This work is licensed under {license}'
+    notice: '© 2025 Victor May. This work is licensed under {license}'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
