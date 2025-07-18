@@ -56,18 +56,7 @@ sections:
   - block: experience
       content:
         title: Work Experience
-        date_format: Jan 2006
-        # Do not manually enter items here.
-        # The following code will automatically pull data from your author profile.
-        items:
-        {{- range (.Site.GetPage "authors" "admin").Params.work -}}
-          - title: {{ .position | markdownify }}
-            company: {{ .company_name | markdownify }}
-            company_url: "{{ .company_url }}"
-            date_start: "{{ .date_start }}"
-            date_end: "{{ .date_end }}"
-            description: "{{ .summary | markdownify }}"
-        {{- end -}}
+        date_format: Jan 2006       
       design:
         columns: '2'
   - block: collection
