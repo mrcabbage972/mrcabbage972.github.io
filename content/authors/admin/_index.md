@@ -54,8 +54,8 @@ profiles:
 education:
   - area: Applied Mathematics
     institution: Tel Aviv University
-  #  date_start: 2016-01-01
-  #  date_end: 2020-12-31
+    date_start: 2011-09-30
+    date_end: 2014-06-01
     summary: |
       Thesis on spectral methods for image denoising. Supervised by [Prof Yoel Shkolnisky](https://sites.google.com/site/yoelshkolnisky/). 
   #   button:
