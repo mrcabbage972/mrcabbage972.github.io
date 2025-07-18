@@ -9,6 +9,18 @@ design:
   spacing: "6rem"
 
 sections:
+  - block: markdown
+    id: intro
+    content:
+      title: ""
+      subtitle: ""
+      text: |
+        Hi, I’m Victor May — a researcher working on AI for coding.
+    design:
+      columns: '1'
+      text_align: center
+      background: ""
+
   # - block: resume-biography-3
   #   content:
   #     # Choose a user profile to display (a folder name within `content/authors/`)
