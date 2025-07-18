@@ -5,6 +5,7 @@ headless: true
 ---
 
 <div class="container">
+    Testing the work experience container
   {{/* Get the author's work experience from their profile page. */}}
   {{- $person_page := .Site.GetPage "authors" "admin" -}}
   {{- if not $person_page -}}
