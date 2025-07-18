@@ -53,12 +53,15 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  - block: markdown      # <--- Add this line
-    content:         # <--- Add this line and indent 'page:'
-      page: experience
+  - block: experience
+    content:
+      title: Work Experience
+      # By default, experiences are loaded from the `admin` user profile.
+      # This block will automatically find your `work:` section in `content/authors/admin/_index.md`.
+      username: admin
     design:
-      # Place content in a box to boolst readability?
-      boxed: false
+      # Use a single column layout for a vertical timeline
+      columns: '1'
   - block: collection
     content:
       title: Recent Publications
