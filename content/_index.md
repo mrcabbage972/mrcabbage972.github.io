@@ -53,12 +53,10 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  - block: experience
-      content:
-        title: Work Experience
-        date_format: Jan 2006       
-      design:
-        columns: '2'
+  - page: experience
+    design:
+      # Place content in a box to boolst readability?
+      boxed: false
   - block: collection
     content:
       title: Recent Publications
