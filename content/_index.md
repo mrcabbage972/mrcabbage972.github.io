@@ -3,7 +3,7 @@ active: true
 ---
 # Leave the homepage title empty to use the site title
 title: ""
-date: 2022-10-24
+date: 2025-07-18
 type: landing
 
 design:
@@ -21,7 +21,7 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
+  <!-- - block: collection
     id: news
     content:
       title: Recent News
@@ -49,5 +49,5 @@ sections:
       view: date-title-summary
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: [0, 0, 0, 0] -->
 ---
