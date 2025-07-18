@@ -9,6 +9,10 @@ design:
   spacing: "6rem"
 
 sections:
+  - block: avatar
+    id: profile
+    design:
+      text_align: center
   - block: markdown
     id: intro
     content:
@@ -16,7 +20,7 @@ sections:
       subtitle: ""
       text: |        
         ## About Me
-        
+
         Hello Internet.
 
         I am a Staff Software Engineer at Google Cloud. My work currently focuses on AI for software engineering. Previously I've been a ML Engineering Manager at Chegg, where I led a team fine-tuning VLM's for multimodal question answering. Before that,  I was working on recommender systems and multi-lingual NLP at Taboola.
