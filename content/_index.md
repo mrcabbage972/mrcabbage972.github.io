@@ -14,8 +14,9 @@ sections:
     content:
       title: ""
       subtitle: ""
-      text: |        
+      text: |                
         ## About Me
+        ![Avatar](/authors/admin/avatar.jpg)
 
         Hello Internet.
 
