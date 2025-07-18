@@ -53,7 +53,9 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  - page: experience
+  - block: page      # <--- Add this line
+    content:         # <--- Add this line and indent 'page:'
+      page: experience
     design:
       # Place content in a box to boolst readability?
       boxed: false
