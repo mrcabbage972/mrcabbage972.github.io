@@ -53,15 +53,14 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  # - block: experience
-  #   content:
-  #     title: Work Experience
-  #     # By default, experiences are loaded from the `admin` user profile.
-  #     # This block will automatically find your `work:` section in `content/authors/admin/_index.md`.
-  #     username: admin
-  #   design:
-  #     # Use a single column layout for a vertical timeline
-  #     columns: '1'
+  - block: experience
+    content:
+      title: Work Experience
+      # By default, experiences are loaded from the `admin` user profile.
+      # This block will automatically find your `work:` section in `content/authors/admin/_index.md`.
+      username: admin
+    design:      
+      columns: '2'
   - block: collection
     content:
       title: Recent Publications
