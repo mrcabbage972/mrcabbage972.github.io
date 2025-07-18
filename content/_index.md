@@ -14,8 +14,15 @@ sections:
     content:
       title: ""
       subtitle: ""
-      text: |
-        Hi, I’m Victor May — a researcher working on AI for coding.
+      text: |        
+        ## About Me
+        
+        Hello Internet.
+
+        I am a Staff Software Engineer at Google Cloud. My work currently focuses on AI for software engineering. Previously I've been a ML Engineering Manager at Chegg, where I led a team fine-tuning VLM's for multimodal question answering. Before that,  I was working on recommender systems and multi-lingual NLP at Taboola.
+
+        Among my contributions to the open-source software communitiy, I worked with <a href="https://www.ontocord.ai/">Ontocord</a> to create the multilingual Large Language Model <a href="https://huggingface.co/blog/mayank-mishra/aurora">Aurora-M</a>.
+        Previously, I took a small part in the LAION <a href="https://open-assistant.io/team">OpenAssistant</a> project.
     design:
       columns: '1'
       text_align: center
