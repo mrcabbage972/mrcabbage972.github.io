@@ -16,6 +16,9 @@ sections:
       subtitle: ""
       text: |                
         ## About Me
+        <p align="center">
+        <img src="/media/avatar.jpg" width="160" style="border-radius: 50%; border: 3px solid #ccc;">
+        </p>
 
         Hello Internet.
 
