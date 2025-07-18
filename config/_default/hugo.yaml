@@ -54,3 +54,17 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+
+module:
+  mounts:
+    - source: layouts
+      target: layouts
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: i18n
+      target: i18n
+    - source: archetypes
+      target: archetypes
