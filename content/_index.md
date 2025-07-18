@@ -16,7 +16,7 @@ sections:
       subtitle: ""
       text: |                
         ## About Me
-        ![Avatar](/authors/admin/avatar.jpg)
+        ![Avatar](/content/authors/admin/avatar.jpg)
 
         Hello Internet.
 
