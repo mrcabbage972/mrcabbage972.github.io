@@ -34,35 +34,15 @@ sections:
       text_align: center
       css_class: dark
 
-  - block: collection
+  - block: markdown
     id: news
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: post
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: date-title-summary
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      title: ""
+      subtitle: ""
+      text: |                
+        ## Recent News
+
+        July 2025: Our new preprint on benchmarking version-specific code generation, [GitChameleon](https://arxiv.org/abs/2507.12367), is up on ArXiv. 
   - block: collection
     content:
       title: Recent Publications
