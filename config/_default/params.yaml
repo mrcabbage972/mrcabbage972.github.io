@@ -11,6 +11,11 @@
 theme:
   default: custom
 
+style:
+  custom_css:
+    - scss/custom.scss
+
+
 
 # SEO
 marketing:
