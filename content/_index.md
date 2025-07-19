@@ -25,3 +25,15 @@ Diganta Misra, Nizar Islah, Victor May, Brice Rauby, Zihan Wang, Justine Gehring
 Taishi Nakamura, Mayank Mishra, Simone Tedeschi, Yekun Chai, Jason T. Stillerman, Felix Friedrich, Prateek Yadav, Tanmay Laud, Vu Minh Chien, Terry Yue Zhuo, Diganta Misra, Ben Bogin, Xuan-Son Vu, Marzena Karpinska, Arnav Varma Dantuluri, Wojciech Kusa, Tommaso Furlanello, Rio Yokota, Niklas Muennighoff, Suhas Pai, Tosin Adewumi, Veronika Laippala, Xiaozhe Yao, Adalberto Barbosa Junior, Aleksandr Drozd, Jordan Clive, Kshitij Gupta, Liangyu Chen, Qi Sun, Ken Tsui, Nour Moustafa-Fahmy, Nicolo Monti, Tai Dang, Ziyang Luo, Tien-Tung Bui, Roberto Navigli, Virendra Mehta, Matthew Blumberg, Victor May, Hiep Nguyen, Sampo Pyysalo (2025). *Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code. Proceedings of the 31st International Conference on Computational Linguistics: Industry Track.*
 
 Victor May, Yosi Keller, Nir Sharon, Yoel Shkolnisky (2014). *An algorithm for improving Non-Local Means operators via low-rank approximation.*
+
+<h2>Blogging</h2>
+I write about ML and related subjects on
+<a href="https://medium.com/@mayvic">Medium</a>.
+
+
+<h2>Kaggle Competitions</h2>
+<ul>
+<li>Silver Medal (Top 1%) - Feedback Prize - English Language Learning</li>
+<li>Silver Medal (Top 3%) - Google AI4Code</li>
+<li>Bronze Medal (Top 6%) - U.S. Patent Phrase to Phrase Matching</li>
+</ul>
