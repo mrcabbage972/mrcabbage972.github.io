@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #d1495b;   /* Rust Red */
+  --color-accent: #edae49;    /* Autumn Gold */
+  --color-bg: #fef9f4;        /* Creamy White */
+  --color-text: #3e3e3e;      /* Dark Gray */
+  --color-muted: #9a8c98;     /* Muted Mauve */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--color-primary);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+}
+
+.content-box {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
