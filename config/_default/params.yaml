@@ -9,7 +9,7 @@
 #   color: sky
 
 theme:
-  default: custom
+  default: 1950s
 
 style:
   custom_css:
