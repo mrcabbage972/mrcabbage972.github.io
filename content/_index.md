@@ -5,6 +5,8 @@ template = "index.html"
 +++
 
 # Victor May
+<span class="site-subtitle">Machine Learning Engineer and Researcher</span>
+
 
 ## About Me
 <p align="center">
