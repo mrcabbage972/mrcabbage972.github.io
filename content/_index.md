@@ -18,7 +18,7 @@ I am a Staff Software Engineer at Google Cloud. My work currently focuses on AI 
 Among my contributions to the open-source software communitiy, I worked with <a href="https://www.ontocord.ai/">Ontocord</a> to create the multilingual Large Language Model <a href="https://huggingface.co/blog/mayank-mishra/aurora">Aurora-M</a>.
 Previously, I took a small part in the LAION <a href="https://open-assistant.io/team">OpenAssistant</a> project.
 
-## Links
+### Links
  [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [X](https://x.com/MrColeslaw972)
 
 ## Publications
