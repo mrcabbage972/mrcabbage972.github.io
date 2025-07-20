@@ -31,11 +31,14 @@ h1, h2, h3 {
 a {
   color: var(--color-accent);
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
+  color: var(--color-primary);
   text-decoration: underline;
 }
+
 
 section {
   max-width: 800px;
@@ -63,13 +66,35 @@ footer {
   border: 1px solid #eee;
 }
 
-
 h1 {
   font-size: 4rem;
   font-weight: 700;
   color: var(--color-primary);
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
   font-family: 'Georgia', serif;
+}
+
+h2 {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+p, ul, li {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 1rem auto;
 }
