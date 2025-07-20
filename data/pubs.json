@@ -1,0 +1,38 @@
+{
+ "entries":{
+  "may2014algorithmimprovingnonlocalmeans":{
+   "bibtex-type":"misc",
+   "title":"An algorithm for improving Non-Local Means operators via low-rank approximation",
+   "author":["Victor May", "Yosi Keller", "Nir Sharon", "Yoel Shkolnisky"],
+   "year":2014,
+   "eprint":"1412.2067",
+   "archiveprefix":"arXiv",
+   "primaryclass":"cs.CV",
+   "url":"https://arxiv.org/abs/1412.2067"
+  },
+  "misra2025gitchameleonevaluatingaicode":{
+   "bibtex-type":"misc",
+   "title":"GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+   "author":["Diganta Misra", "Nizar Islah", "Victor May", "Brice Rauby", "Zihan Wang", "Justine Gehring", "Antonio Orvieto", "Muawiz Chaudhary", "Eilif B. Muller", "Irina Rish", "Samira Ebrahimi Kahou", "Massimo Caccia"],
+   "year":2025,
+   "eprint":"2507.12367",
+   "archiveprefix":"arXiv",
+   "primaryclass":"cs.SE",
+   "url":"https://arxiv.org/abs/2507.12367"
+  },
+  "nakamura-etal-2025-aurora":{
+   "bibtex-type":"inproceedings",
+   "title":"Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code",
+   "author":["Nakamura, Taishi", "Mishra, Mayank", "Tedeschi, Simone", "Chai, Yekun", "Stillerman, Jason T.", "Friedrich, Felix", "Yadav, Prateek", "Laud, Tanmay", "Chien, Vu Minh", "Zhuo, Terry Yue", "Misra, Diganta", "Bogin, Ben", "Vu, Xuan-Son", "Karpinska, Marzena", "Dantuluri, Arnav Varma", "Kusa, Wojciech", "Furlanello, Tommaso", "Yokota, Rio", "Muennighoff, Niklas", "Pai, Suhas", "Adewumi, Tosin", "Laippala, Veronika", "Yao, Xiaozhe", "Junior, Adalberto Barbosa", "Drozd, Aleksandr", "Clive, Jordan", "Gupta, Kshitij", "Chen, Liangyu", "Sun, Qi", "Tsui, Ken", "Moustafa-Fahmy, Nour", "Monti, Nicolo", "Dang, Tai", "Luo, Ziyang", "Bui, Tien-Tung", "Navigli, Roberto", "Mehta, Virendra", "Blumberg, Matthew", "May, Victor", "Nguyen, Hiep", "Pyysalo, Sampo"],
+   "editor":["Rambow, Owen", "Wanner, Leo", "Apidianaki, Marianna", "Al-Khalifa, Hend", "Eugenio, Barbara Di", "Schockaert, Steven", "Darwish, Kareem", "Agarwal, Apoorv"],
+   "booktitle":"Proceedings of the 31st International Conference on Computational Linguistics: Industry Track",
+   "month":"jan",
+   "year":2025,
+   "address":"Abu Dhabi, UAE",
+   "publisher":"Association for Computational Linguistics",
+   "url":"https://aclanthology.org/2025.coling-industry.56/",
+   "pages":"656&ndash;678",
+   "abstract":"Pretrained language models are integral part of AI applications, but their high computational cost for training limits accessibility. Initiatives such as Bloom and StarCoder aim to democratize access to pretrained models for collaborative community development. Despite these efforts, such models encounter challenges such as limited multilingual capabilities, risks of catastrophic forgetting during continual pretraining, and the high costs of training models from scratch, alongside the need to align with AI safety standards and regulatory frameworks. This paper presents Aurora-M, a 15B parameter multilingual open-source model trained on English, Finnish, Hindi, Japanese, Vietnamese, and code. Continually pretrained from StarCoderPlus on 435B additional tokens, Aurora-M surpasses 2T tokens in total training token count. It is the first open-source multilingual model fine-tuned on human-reviewed safety instructions, thus aligning its development not only with conventional red-teaming considerations, but also with the specific concerns articulated in the Biden-Harris Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence. We evaluate Aurora-M across a wide range of tasks and languages, showcasing its robustness against catastrophic forgetting and its superior performance in multilingual settings, particularly in safety evaluations. We open-source Aurora-M and its variants to encourage responsible open-source development of large language models at https://huggingface.co/aurora-m."
+  }
+ }
+}

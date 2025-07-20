@@ -21,3 +21,4 @@ secrets.py
 # Build artifacts
 dist/
 build/
+/.venv/

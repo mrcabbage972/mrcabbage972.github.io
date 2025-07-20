@@ -1,0 +1,12 @@
+{% set pubs = load_data(path="data/pubs.json") %}
+<ul class="publications">
+  {% for key, pub in pubs.entries %}
+    <li>
+      <strong>{{ pub.title }}</strong><br>
+      {{ pub.author | join(sep=", ") }} ({{ pub.year }})<br>
+      {% if pub.url %}
+        <a href="{{ pub.url }}" target="_blank">Link</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
