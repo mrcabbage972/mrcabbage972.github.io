@@ -1,39 +1,38 @@
 +++
 title = "Victor May"
 template = "index.html"
-
 +++
 
 # Victor May
-<span class="site-subtitle">Machine Learning Engineer and Researcher</span>
-
+<span class="site-subtitle" style="text-align:center; display:block;">Machine Learning Engineer & Researcher</span>
 
 ## About Me
+
 <p align="center">
-<img src="media/avatar.jpg" width="160" style="border-radius: 50%; border: 3px solid #ccc;">
+  <img src="media/avatar.jpg" width="160" style="border-radius: 50%; border: 3px solid #ccc;">
 </p>
 
-Hello Internet.
+Hello, Internet.
 
-I am a Staff Software Engineer at Google Cloud, based in New York City. My work currently focuses on AI for software engineering. Previously I've been a ML Engineering Manager at Chegg, where I led a team fine-tuning VLM's for multimodal question answering. Before that,  I was working on recommender systems and multi-lingual NLP at Taboola.
+I’m a Staff Software Engineer at Google Cloud, based in New York City, currently focused on AI for software engineering. Previously, I led a team at Chegg fine-tuning vision-language models (VLMs) for multimodal question answering. Before that, I worked on recommender systems and multilingual NLP at Taboola.
 
-Among my contributions to the open-source software communitiy, I worked with <a href="https://www.ontocord.ai/">Ontocord</a> to create the multilingual Large Language Model <a href="https://huggingface.co/blog/mayank-mishra/aurora">Aurora-M</a>.
-Previously, I took a small part in the LAION <a href="https://open-assistant.io/team">OpenAssistant</a> project.
+I hold an M.Sc. in Applied Mathematics from Tel Aviv University and a B.Sc. in Computer Science and Mathematics from Bar-Ilan University.
 
-### Links
- [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [X](https://x.com/MrColeslaw972)
+I contribute to open-source AI projects. Most recently, I collaborated with [Ontocord](https://www.ontocord.ai/) on [Aurora-M](https://huggingface.co/blog/mayank-mishra/aurora), a multilingual large language model. I also participated in the [OpenAssistant](https://open-assistant.io/team) initiative by LAION.
+
+### Links  
+[Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## Publications
 {{ publications() }}
 
-<h2>Blogging</h2>
-I write about ML and related subjects on
-<a href="https://medium.com/@mayvic">Medium</a>.
+## Blogging
 
+I write about machine learning and related topics on  
+[Medium](https://medium.com/@mayvic).
 
-<h2>Kaggle Competitions</h2>
-<ul>
-<li>Silver Medal (Top 1%) - Feedback Prize - English Language Learning</li>
-<li>Silver Medal (Top 3%) - Google AI4Code</li>
-<li>Bronze Medal (Top 6%) - U.S. Patent Phrase to Phrase Matching</li>
-</ul>
+## Kaggle Competitions
+
+- 🥈 Silver Medal (Top 1%) – Feedback Prize: English Language Learning  
+- 🥈 Silver Medal (Top 3%) – Google AI4Code  
+- 🥉 Bronze Medal (Top 6%) – U.S. Patent Phrase to Phrase Matching  
