@@ -21,7 +21,7 @@ I hold an M.Sc. in Applied Mathematics from Tel Aviv University and a B.Sc. in C
 I contribute to open-source AI projects. Most recently, I collaborated with [Ontocord](https://www.ontocord.ai/) on [Aurora-M](https://huggingface.co/blog/mayank-mishra/aurora), a multilingual large language model. I also participated in the [OpenAssistant](https://open-assistant.io/team) initiative by LAION.
 
 ### Links  
-[Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [X (Twitter)](https://x.com/MrColeslaw972)
+[Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## Publications
 {{ publications() }}
