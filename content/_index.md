@@ -23,6 +23,10 @@ I contribute to open-source AI projects. Most recently, I collaborated with [Ont
 ### Links  
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
+## News
+July 2025: Our new manuscript **FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration** had been submitted for publication.
+
+
 ## Publications
 {{ publications() }}
 
