@@ -154,3 +154,17 @@ footer a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+.publications { list-style: none; padding-left: 0; }
+.publication + .publication { margin-top: 1rem; }
+.pub-title { display: inline-block; margin-bottom: .15rem; }
+.pub-links {
+  margin-top: .4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .5rem;
+}
+.pub-badge img { height: 20px; vertical-align: middle; }
+@media (prefers-color-scheme: dark) {
+  .pub-badge img { filter: brightness(0.95) saturate(1.1); }
+}
