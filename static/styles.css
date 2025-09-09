@@ -168,3 +168,5 @@ footer a:hover {
 @media (prefers-color-scheme: dark) {
   .pub-badge img { filter: brightness(0.95) saturate(1.1); }
 }
+
+.pub-venue { color:#333; font-style:italic; }

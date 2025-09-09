@@ -1,40 +1,32 @@
 [
   {
     "id": "may2014algorithmimprovingnonlocalmeans",
-    "bibtex-type": "misc",
     "title": "An algorithm for improving Non-Local Means operators via low-rank approximation",
     "author": ["Victor May", "Yosi Keller", "Nir Sharon", "Yoel Shkolnisky"],
     "year": 2014,
+    "venue": "IEEE Transactions on Image Processing",
     "url": "https://dl.acm.org/toc/tip/2016/25/3",
     "arxiv": "https://arxiv.org/abs/1412.2067",
-    "scholar": "https://scholar.google.com/scholar?hl=en&q=An+algorithm+for+improving+Non-Local+Means+operators+via+low-rank+approximation"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:u5HHmVD_uO8C"
   },
   {
     "id": "misra2025gitchameleonevaluatingaicode",
-    "bibtex-type": "misc",
     "title": "GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
     "author": ["Diganta Misra", "Nizar Islah", "Victor May", "Brice Rauby", "Zihan Wang", "Justine Gehring", "Antonio Orvieto", "Muawiz Chaudhary", "Eilif B. Muller", "Irina Rish", "Samira Ebrahimi Kahou", "Massimo Caccia"],
     "year": 2025,
+    "venue": "arXiv preprint",
     "arxiv": "https://arxiv.org/abs/2507.12367",
-    "scholar": "https://scholar.google.com/scholar?hl=en&q=GitChameleon:+Evaluating+AI+Code+Generation+Against+Python+Library+Version+Incompatibilities",
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:2osOgNQ5qMEC",
     "github": "https://github.com/mrcabbage972/GitChameleonBenchmark",
-    "twitter": "https://x.com/MassCaccia/status/1958195717572313403",
-    "extra_links": [
-      {
-        "label": "Hugging Face",
-        "url": "https://huggingface.co/papers/2507.12367",
-        "color": "FFAE1A",
-        "logo": "huggingface"
-      }
-    ]
+    "twitter": "https://x.com/MassCaccia/status/1958195717572313403"
   },
   {
     "id": "nakamura-etal-2025-aurora",
-    "bibtex-type": "inproceedings",
     "title": "Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code",
     "author": ["Nakamura, Taishi", "Mishra, Mayank", "…", "May, Victor", "…"],
     "year": 2025,
+    "venue": "COLING Industry Track",
     "acl": "https://aclanthology.org/2025.coling-industry.56/",
-    "scholar": "https://scholar.google.com/scholar?hl=en&q=Aurora-M:+Open+Source+Continual+Pre-training+for+Multilingual+Language+and+Code"
+    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:9yKSN-GCB0IC"
   }
 ]

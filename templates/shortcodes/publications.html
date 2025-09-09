@@ -1,64 +1,33 @@
 {% set pubs = load_data(path="papers.json") %}
 
-{# TEMP DEBUG: uncomment once to verify it's an array #}
-{# <pre style="white-space:pre-wrap">{{ pubs | json_encode(pretty=true) }}</pre> #}
-
 <ul class="publications">
   {% for pub in pubs %}
     <li class="publication">
-      <strong class="pub-title">{{ pub.title }}</strong><br>
-      <span class="pub-authors">{{ pub.author | join(sep=", ") }}</span>
-      <span class="pub-year">({{ pub.year }})</span>
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-authors">
+        {{ pub.author | join(sep=", ") }}
+        {% if pub.venue %} · <span class="pub-venue">{{ pub.venue }}</span>{% endif %}
+        <span class="pub-year">({{ pub.year }})</span>
+      </div>
 
-      <div class="pub-links" style="margin-top:.4rem; display:flex; flex-wrap:wrap; gap:.35rem .5rem">
+      <div class="pub-links">
         {% if pub.url %}
-          <a class="pub-badge" href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
-            <img alt="Paper badge" src="https://img.shields.io/badge/paper-0b7285.svg?style=flat-square&logo=readme&logoColor=white">
-          </a>
+          <a class="pub-badge" href="{{ pub.url }}"><img src="https://img.shields.io/badge/paper-0b7285.svg?style=flat-square&logo=readme&logoColor=white" alt="Paper"></a>
         {% endif %}
         {% if pub.arxiv %}
-          <a class="pub-badge" href="{{ pub.arxiv }}" target="_blank" rel="noopener noreferrer">
-            <img alt="arXiv badge" src="https://img.shields.io/badge/arxiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white">
-          </a>
+          <a class="pub-badge" href="{{ pub.arxiv }}"><img src="https://img.shields.io/badge/arxiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
         {% endif %}
         {% if pub.acl %}
-          <a class="pub-badge" href="{{ pub.acl }}" target="_blank" rel="noopener noreferrer">
-            <img alt="ACL badge" src="https://img.shields.io/badge/acl%20anthology-2c3e50.svg?style=flat-square&logo=academia&logoColor=white">
-          </a>
-        {% endif %}
-        {% if pub.pdf %}
-          <a class="pub-badge" href="{{ pub.pdf }}" target="_blank" rel="noopener noreferrer">
-            <img alt="PDF badge" src="https://img.shields.io/badge/pdf-555555.svg?style=flat-square&logo=adobeacrobatreader&logoColor=white">
-          </a>
+          <a class="pub-badge" href="{{ pub.acl }}"><img src="https://img.shields.io/badge/acl%20anthology-2c3e50.svg?style=flat-square&logo=academia&logoColor=white" alt="ACL"></a>
         {% endif %}
         {% if pub.scholar %}
-          <a class="pub-badge" href="{{ pub.scholar }}" target="_blank" rel="noopener noreferrer">
-            <img alt="Scholar badge" src="https://img.shields.io/badge/google%20scholar-4285F4.svg?style=flat-square&logo=googlescholar&logoColor=white">
-          </a>
+          <a class="pub-badge" href="{{ pub.scholar }}"><img src="https://img.shields.io/badge/google%20scholar-4285F4.svg?style=flat-square&logo=googlescholar&logoColor=white" alt="Scholar"></a>
         {% endif %}
         {% if pub.github %}
-          <a class="pub-badge" href="{{ pub.github }}" target="_blank" rel="noopener noreferrer">
-            <img alt="GitHub badge" src="https://img.shields.io/badge/github-181717.svg?style=flat-square&logo=github&logoColor=white">
-          </a>
+          <a class="pub-badge" href="{{ pub.github }}"><img src="https://img.shields.io/badge/github-181717.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
         {% endif %}
         {% if pub.twitter %}
-          <a class="pub-badge" href="{{ pub.twitter }}" target="_blank" rel="noopener noreferrer">
-            <img alt="Twitter badge" src="https://img.shields.io/badge/twitter%20thread-1DA1F2.svg?style=flat-square&logo=twitter&logoColor=white">
-          </a>
-        {% endif %}
-
-        {% if pub.extra_links %}
-          {% for link in pub.extra_links %}
-            {% set link_label = link.label | default(value="Link " ~ loop.index) %}
-            {% set link_slug = link_label | lower | urlencode %}
-            {% set link_color = link.color | default(value="6c757d") %}
-            {% set link_logo = link.logo | default(value="") %}
-            {% set link_logoColor = link.logoColor | default(value="white") %}
-            <a class="pub-badge" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-              <img alt="{{ link_label }} badge"
-                   src="https://img.shields.io/badge/{{ link_slug }}-{{ link_color }}.svg?style=flat-square{% if link_logo != "" %}&logo={{ link_logo | urlencode }}&logoColor={{ link_logoColor }}{% endif %}">
-            </a>
-          {% endfor %}
+          <a class="pub-badge" href="{{ pub.twitter }}"><img src="https://img.shields.io/badge/twitter%20thread-1DA1F2.svg?style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
         {% endif %}
       </div>
     </li>
