@@ -1,5 +1,5 @@
 +++
-title = "Victor May"
+title = "Victor May — Machine Learning Engineer & Researcher"
 template = "index.html"
 +++
 
