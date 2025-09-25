@@ -25,6 +25,7 @@ I contribute to open-source AI projects. Most recently, I collaborated with [Ont
 
 ## News
 September 2025: Our papers **FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration** and **GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities** had been accepted to the NeurIPS 2025 Deep Learning for Code workshop.
+
 July 2025: Our new manuscript **FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration** had been submitted for publication.
 
 
