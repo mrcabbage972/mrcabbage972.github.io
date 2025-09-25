@@ -170,3 +170,14 @@ footer a:hover {
 }
 
 .pub-venue { color:#333; font-style:italic; }
+
+
+/* For **bold** text */
+strong, b {
+  font-weight: bold;
+}
+
+/* For *italic* text */
+em, i {
+  font-style: italic;
+}
