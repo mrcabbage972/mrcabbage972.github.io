@@ -24,7 +24,7 @@ I contribute to open-source AI projects. Most recently, I collaborated with [Ont
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## News
-September 2025: Our papers **FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration** and **GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities** had been accepted to the *NeurIPS 2025 Deep Learning for Code Workshop*.
+September 2025: Our papers ```FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration``` and ```GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities``` had been accepted to the *NeurIPS 2025 Deep Learning for Code Workshop*.
 
 
 ## Publications
