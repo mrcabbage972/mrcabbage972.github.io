@@ -6,8 +6,8 @@
     "year": 2014,
     "venue": "IEEE Transactions on Image Processing",
     "url": "https://dl.acm.org/toc/tip/2016/25/3",
-    "arxiv": "https://arxiv.org/abs/1412.2067",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:u5HHmVD_uO8C"
+    "arxiv": "https://arxiv.org/abs/1412.2067"
+
   },
   {
     "id": "misra2025gitchameleonevaluatingaicode",
@@ -16,7 +16,6 @@
     "year": 2025,
     "venue": "arXiv preprint",
     "arxiv": "https://arxiv.org/abs/2507.12367",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:2osOgNQ5qMEC",
     "github": "https://github.com/mrcabbage972/GitChameleonBenchmark",
     "twitter": "https://x.com/MassCaccia/status/1958195717572313403"
   },
@@ -26,7 +25,16 @@
     "author": ["Nakamura, Taishi", "Mishra, Mayank", "…", "May, Victor", "…"],
     "year": 2025,
     "venue": "COLING Industry Track",
-    "acl": "https://aclanthology.org/2025.coling-industry.56/",
-    "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:9yKSN-GCB0IC"
+    "acl": "https://aclanthology.org/2025.coling-industry.56/"
+
+  },
+  {
+    "id": "mixturevitae",
+    "title": "MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources",
+    "author": ["Nguyen, Huu", "Raj, Harsh", "May, Victor", "..."],
+    "year": 2025,
+    "venue": "arXiv Preprint",
+    "arxiv": "https://arxiv.org/abs/2509.25531",
+    "github": "https://github.com/ontocord/mixturevitae"
   }
 ]
