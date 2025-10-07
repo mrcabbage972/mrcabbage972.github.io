@@ -170,7 +170,7 @@ em, i {
 
 /* Publications — unified, theme-aligned */
 .publications{list-style:none;padding:0;margin:0}
-.publication{padding:1rem 0;border-bottom:1px solid #eee}
+.publication{padding:0.25rem 0;border-bottom:1px solid #eee}
 .publication:last-child{border-bottom:0}
 
 /* Year header: just a touch larger than body (1.125rem) */
@@ -178,7 +178,7 @@ em, i {
   margin: 2rem 0 1rem;
   font-weight: 600;
   color: var(--color-primary);
-  padding-bottom: .2rem;
+  padding-bottom: .1rem;
   font-size: 1.2rem;
   letter-spacing: .01em;
 }
@@ -186,9 +186,11 @@ em, i {
 
 /* Title ~ body size but bold; keeps rhythm tight */
 .pub-title{
-  margin:.1rem 0 .25rem;
-  font:600 1.125rem/1.35 'Inter',sans-serif;
-  color:var(--color-text);
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--color-accent);
+  display: inline-block;
+  padding-bottom: 0.1rem;
 }
 
 /* Authors/venue line = body size */
@@ -227,6 +229,8 @@ code.copybox{
   .pub-badge img{filter:brightness(.98) saturate(1.05)}
   code.copybox{background:#1f1f1f;border-color:#333;color:#f1f1f1}
 }
+
+
 
 /* Mobile: follow your global scale */
 @media (max-width:600px){
