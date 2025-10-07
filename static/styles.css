@@ -155,21 +155,6 @@ footer a:hover {
   margin-right: auto;
 }
 
-.publications { list-style: none; padding-left: 0; }
-.publication + .publication { margin-top: 1rem; }
-.pub-title { display: inline-block; margin-bottom: .15rem; }
-.pub-links {
-  margin-top: .4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem .5rem;
-}
-.pub-badge img { height: 20px; vertical-align: middle; }
-@media (prefers-color-scheme: dark) {
-  .pub-badge img { filter: brightness(0.95) saturate(1.1); }
-}
-
-.pub-venue { color:#333; font-style:italic; }
 
 
 /* For **bold** text */
@@ -180,4 +165,73 @@ strong, b {
 /* For *italic* text */
 em, i {
   font-style: italic;
+}
+
+
+/* Publications — unified, theme-aligned */
+.publications{list-style:none;padding:0;margin:0}
+.publication{padding:1rem 0;border-bottom:1px solid #eee}
+.publication:last-child{border-bottom:0}
+
+/* Year header: just a touch larger than body (1.125rem) */
+.year-head {
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding-bottom: .2rem;
+  font-size: 1.2rem;
+  letter-spacing: .01em;
+}
+
+
+/* Title ~ body size but bold; keeps rhythm tight */
+.pub-title{
+  margin:.1rem 0 .25rem;
+  font:600 1.125rem/1.35 'Inter',sans-serif;
+  color:var(--color-text);
+}
+
+/* Authors/venue line = body size */
+.pub-meta{
+  font:400 1.125rem/1.6 'Inter',sans-serif;
+  color:var(--color-text);
+}
+.pub-venue{color:var(--color-muted);font-style:italic}
+.pub-year{color:var(--color-muted);margin-left:.25rem}
+.pub-status{
+  background:color-mix(in oklab,var(--color-primary) 10%, transparent);
+  color:var(--color-primary);
+  border:1px solid color-mix(in oklab,var(--color-primary) 30%, transparent);
+  border-radius:999px;padding:.1rem .55rem;margin-left:.35rem;font-size:.95rem
+}
+
+/* Highlight your name without changing line height */
+.me{font-weight:700;color:var(--color-primary);text-underline-offset:2px}
+
+/* Badges kept, but scaled to baseline; tighter gap */
+.pub-links{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.3rem .5rem}
+.pub-badge img{height:18px;vertical-align:middle;border-radius:4px;box-shadow:none}
+
+details summary{
+  margin-top:.4rem;cursor:pointer;
+  font:600 1rem/1.4 'Inter',sans-serif;color:var(--color-primary)
+}
+code.copybox{
+  display:block;white-space:pre-wrap;
+  font:400 .9rem/1.5 "JetBrains Mono",ui-monospace,monospace;
+  background:#fff;border:1px solid #eee;border-radius:8px;padding:.6rem;color:var(--color-text)
+}
+
+/* Dark mode tweaks */
+@media (prefers-color-scheme: dark){
+  .pub-badge img{filter:brightness(.98) saturate(1.05)}
+  code.copybox{background:#1f1f1f;border-color:#333;color:#f1f1f1}
+}
+
+/* Mobile: follow your global scale */
+@media (max-width:600px){
+  .year-head{font-size:1.15rem}
+  .pub-title{font-size:1.05rem}
+  .pub-links{gap:.25rem .4rem}
+  .pub-badge img{height:17px}
 }
