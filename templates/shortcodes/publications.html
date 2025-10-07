@@ -32,7 +32,11 @@
     {% endif %}
 
     <li class="publication">
-      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-title">
+        <a href="{{ pub.url | default(value=pub.doi) }}" class="pub-link" target="_blank" rel="noopener">
+          {{ pub.title }}
+        </a>
+      </div>
 
       <div class="pub-meta">
         {% if pub.author %}
