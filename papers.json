@@ -1,5 +1,31 @@
 {
   "entries": {
+    "may2025_freshbrew": {
+      "bibtex-type": "article",
+      "title": "FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration",
+      "author": [
+        "Victor May",
+        "Diganta Misra",
+        "Yanqi Luo",
+        "Anjali Sridhar",
+        "Justine Gehring",
+        "Silvio Soares Ribeiro Junior"
+      ],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2510.04852",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2510.04852",
+      "arxiv": "https://arxiv.org/abs/2510.04852",
+      "primaryclass": "cs.SE",
+      "subjects": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "venue": "NeurIPS 2025 Deep Learning for Code (DL4C) Workshop",
+      "venue_url": "",
+
+      "openreview": ""
+    },
     "may2015_nonlocalmeans_lowrank": {
       "bibtex-type": "article",
       "title": "An Algorithm for Improving Non-Local Means Operators via Low-Rank Approximation",
