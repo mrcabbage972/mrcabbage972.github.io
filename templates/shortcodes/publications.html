@@ -1,35 +1,96 @@
-{% set pubs = load_data(path="papers.json") %}
+{# templates/shortcodes/publications.html #}
+
+{% set raw = load_data(path="papers.json") %}
+
+{% set_global pubs = [] %}
+{% if raw.entries is defined %}
+  {% for k, v in raw.entries %}
+    {% set_global pubs = pubs | concat(with=[v]) %}
+  {% endfor %}
+{% else %}
+  {% set_global pubs = raw %}
+{% endif %}
+
+{% set pubs = pubs | sort(attribute="year") | reverse %}
+{% set_global last_year = -1 %}
+
+<style>
+  .publications { list-style:none; padding:0; margin:0; }
+  .year-head { margin:1.25rem 0 .5rem; font-weight:700; font-size:1.1rem; opacity:.85; }
+  .publication { padding:.75rem 0; border-bottom:1px solid #eee; }
+  .pub-title { font-weight:600; line-height:1.25; margin-bottom:.25rem; }
+  .pub-meta { font-size:.95rem; color:#444; }
+  .pub-venue { background:#f3f4f6; border-radius:999px; padding:.1rem .5rem; margin-left:.35rem; }
+  .pub-status { background:#eef6ff; border:1px solid #dbeafe; color:#1d4ed8; border-radius:999px; padding:.05rem .5rem; margin-left:.35rem; font-size:.85em; }
+  .pub-links { margin-top:.35rem; display:flex; flex-wrap:wrap; gap:.25rem; }
+  .pub-badge img { height:20px; vertical-align:middle; }
+  .me { font-weight:700; text-decoration:underline; text-underline-offset:2px; }
+  code.copybox { display:block; white-space:pre-wrap; font-size:.85rem; background:#f8fafc; border:1px solid #e2e8f0; padding:.5rem; border-radius:.5rem; }
+</style>
 
 <ul class="publications">
   {% for pub in pubs %}
+    {% if last_year != pub.year %}
+      <li class="year-head">{{ pub.year }}</li>
+      {% set_global last_year = pub.year %}
+    {% endif %}
+
     <li class="publication">
       <div class="pub-title">{{ pub.title }}</div>
-      <div class="pub-authors">
-        {{ pub.author | join(sep=", ") }}
-        {% if pub.venue %} · <span class="pub-venue">{{ pub.venue }}</span>{% endif %}
-        <span class="pub-year">({{ pub.year }})</span>
+
+      <div class="pub-meta">
+        {% if pub.author %}
+          {% for a in pub.author %}
+            {% if a | lower == "victor may" %}
+              <span class="me">{{ a }}</span>{% if not loop.last %}, {% endif %}
+            {% else %}
+              {{ a }}{% if not loop.last %}, {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {# safe venue fallback #}
+        {% set v = "" %}
+        {% if pub.venue is defined and pub.venue %}{% set v = pub.venue %}
+        {% elif pub.journal is defined and pub.journal %}{% set v = pub.journal %}
+        {% elif pub.booktitle is defined and pub.booktitle %}{% set v = pub.booktitle %}
+        {% endif %}
+        {% if v != "" %} · <span class="pub-venue">{{ v }}</span>{% endif %}
+
+        {% if pub.year %} <span class="pub-year">({{ pub.year }})</span>{% endif %}
+        {% if pub.status is defined and pub.status and pub.status != "published" %}
+          <span class="pub-status">{{ pub.status }}</span>
+        {% endif %}
       </div>
 
       <div class="pub-links">
-        {% if pub.url %}
-          <a class="pub-badge" href="{{ pub.url }}"><img src="https://img.shields.io/badge/paper-0b7285.svg?style=flat-square&logo=readme&logoColor=white" alt="Paper"></a>
-        {% endif %}
-        {% if pub.arxiv %}
-          <a class="pub-badge" href="{{ pub.arxiv }}"><img src="https://img.shields.io/badge/arxiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
-        {% endif %}
-        {% if pub.acl %}
-          <a class="pub-badge" href="{{ pub.acl }}"><img src="https://img.shields.io/badge/acl%20anthology-2c3e50.svg?style=flat-square&logo=academia&logoColor=white" alt="ACL"></a>
-        {% endif %}
-        {% if pub.scholar %}
-          <a class="pub-badge" href="{{ pub.scholar }}"><img src="https://img.shields.io/badge/google%20scholar-4285F4.svg?style=flat-square&logo=googlescholar&logoColor=white" alt="Scholar"></a>
-        {% endif %}
-        {% if pub.github %}
-          <a class="pub-badge" href="{{ pub.github }}"><img src="https://img.shields.io/badge/github-181717.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
-        {% endif %}
-        {% if pub.twitter %}
-          <a class="pub-badge" href="{{ pub.twitter }}"><img src="https://img.shields.io/badge/twitter%20thread-1DA1F2.svg?style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
-        {% endif %}
+        {% if pub.url %}<a class="pub-badge" href="{{ pub.url }}"><img src="https://img.shields.io/badge/paper-0b7285.svg?style=flat-square&logo=readme&logoColor=white" alt="Paper"></a>{% endif %}
+        {% if pub.arxiv %}<a class="pub-badge" href="{{ pub.arxiv }}"><img src="https://img.shields.io/badge/arxiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>{% endif %}
+        {% if pub.acl %}<a class="pub-badge" href="{{ pub.acl }}"><img src="https://img.shields.io/badge/acl%20anthology-2c3e50.svg?style=flat-square&logo=academia&logoColor=white" alt="ACL"></a>{% endif %}
+        {% if pub.scholar %}<a class="pub-badge" href="{{ pub.scholar }}"><img src="https://img.shields.io/badge/google%20scholar-4285F4.svg?style=flat-square&logo=googlescholar&logoColor=white" alt="Scholar"></a>{% endif %}
+        {% if pub.github %}<a class="pub-badge" href="{{ pub.github }}"><img src="https://img.shields.io/badge/github-181717.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>{% endif %}
+        {% if pub.twitter %}<a class="pub-badge" href="{{ pub.twitter }}"><img src="https://img.shields.io/badge/twitter%20thread-1DA1F2.svg?style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>{% endif %}
+        {% if pub.doi %}<a class="pub-badge" href="https://doi.org/{{ pub.doi }}"><img src="https://img.shields.io/badge/DOI-4B0082.svg?style=flat-square&logo=doi&logoColor=white" alt="DOI"></a>{% endif %}
       </div>
+
+      {% if pub.abstract %}
+        <details style="margin-top:.35rem">
+          <summary>Abstract</summary>
+          <p>{{ pub.abstract }}</p>
+        </details>
+      {% endif %}
+
+      {% if pub.bibtex %}
+        <details style="margin-top:.35rem">
+          <summary>BibTeX</summary>
+          <button class="pub-badge" onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText)">
+            <img src="https://img.shields.io/badge/copy%20bibtex-6b7280.svg?style=flat-square&logo=files&logoColor=white" alt="Copy">
+          </button>
+          <code class="copybox">
+{{ pub.bibtex }}
+          </code>
+        </details>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
