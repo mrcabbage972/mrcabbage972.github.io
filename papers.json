@@ -20,35 +20,30 @@
     },
 
     "misra2025_gitchameleon": {
-      "bibtex-type": "article",
-      "title": "GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
-      "author": [
-        "Diganta Misra",
-        "Nizar Islah",
-        "Victor May",
-        "Brice Rauby",
-        "Zihan Wang",
-        "Justine Gehring",
-        "Antonio Orvieto",
-        "Muawiz Chaudhary",
-        "Eilif B. Muller",
-        "Irina Rish",
-        "Samira Ebrahimi Kahou",
-        "Massimo Caccia"
-      ],
-      "journal": "arXiv preprint",
-      "volume": "arXiv:2507.12367",
-      "year": 2025,
-      "url": "https://arxiv.org/abs/2507.12367",
-      "arxiv": "https://arxiv.org/abs/2507.12367",
-      "github": "https://github.com/NizarIslah/GitChameleon",
-      "twitter": "https://x.com/MassCaccia/status/1958195717572313403",
-      "scholar": "https://scholar.google.com/scholar?q=GitChameleon%3A+Evaluating+AI+Code+Generation+Against+Python+Library+Version+Incompatibilities",
-      "eprint": "2507.12367",
-      "archiveprefix": "arXiv",
-      "primaryclass": "cs.SE",
-      "status": "preprint"
-    },
+  "bibtex-type": "article",
+  "title": "GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+  "author": [
+    "Diganta Misra","Nizar Islah","Victor May","Brice Rauby","Zihan Wang","Justine Gehring",
+    "Antonio Orvieto","Muawiz Chaudhary","Eilif B. Muller","Irina Rish",
+    "Samira Ebrahimi Kahou","Massimo Caccia"
+  ],
+  "year": 2025,
+  "journal": "arXiv preprint",
+  "volume": "arXiv:2507.12367",
+  "url": "https://arxiv.org/abs/2507.12367",
+  "arxiv": "https://arxiv.org/abs/2507.12367",
+  "github": "https://github.com/NizarIslah/GitChameleon",
+  "blog": "https://huggingface.co/blog/cabbage972/gitchameleon2",
+  "google_research": "https://research.google/pubs/gitchameleon-20-evaluating-ai-code-generation-against-python-library-version-incompatibilities/",
+  "twitter": "https://x.com/nizar_islah/status/1857423702175223994",
+  "scholar": "https://scholar.google.com/scholar?q=GitChameleon%3A+Evaluating+AI+Code+Generation+Against+Python+Library+Version+Incompatibilities",
+
+  "venue": "NeurIPS 2025 Deep Learning for Code (DL4C) Workshop",
+  "venue_url": "",
+  "openreview": "",
+  "status": "accepted"
+},
+
 
     "nguyen2025_mixturevitae": {
       "bibtex-type": "article",
