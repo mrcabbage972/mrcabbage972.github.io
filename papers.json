@@ -24,7 +24,8 @@
       "venue": "NeurIPS 2025 Deep Learning for Code (DL4C) Workshop",
       "venue_url": "",
 
-      "openreview": ""
+      "openreview": "",
+       "status": "accepted"
     },
     "may2015_nonlocalmeans_lowrank": {
       "bibtex-type": "article",
@@ -42,7 +43,7 @@
       "eprint": "1412.2067",
       "archiveprefix": "arXiv",
       "primaryclass": "cs.CV",
-      "status": "published"
+      "status": "accepted"
     },
 
     "misra2025_gitchameleon": {
@@ -169,7 +170,7 @@
       "scholar": "https://scholar.google.com/scholar?q=Aurora-M%3A+Open+Source+Continual+Pre-training+for+Multilingual+Language+and+Code",
       "pages": "656–678",
       "doi": "10.18653/v1/2025.coling-industry.56",
-      "status": "published"
+      "status": "accepted"
     }
   }
 }
