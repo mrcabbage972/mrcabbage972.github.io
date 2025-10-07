@@ -36,13 +36,31 @@
 
       <div class="pub-meta">
         {% if pub.author %}
-          {% for a in pub.author %}
+          <!-- {% for a in pub.author %}
             {% if a | lower == "victor may" %}
               <span class="me">{{ a }}</span>{% if not loop.last %}, {% endif %}
             {% else %}
               {{ a }}{% if not loop.last %}, {% endif %}
             {% endif %}
+          {% endfor %} -->
+
+          {% set limit = 5 %}
+          {% for a in pub.author %}
+          {% if a | lower == "victor may" %}
+            {% if loop.index0 >= limit %}
+            , ...,
+            {% endif %}
+            <span class="me">{{ a }}</span>{% if not loop.last %}, {% endif %}
+          {% endif %}
+            {% if loop.index0 < limit %}
+              {{ a }}{% if not loop.last and loop.index0 + 1 < limit %}, {% endif %}
+            {% endif %}
           {% endfor %}
+          {% if pub.author | length > limit %}
+            <span>, ...</span>
+           
+          {% endif %}
+
         {% endif %}
 
         {% if v != "" %} · <span class="pub-venue">{{ v }}</span>{% endif %}
