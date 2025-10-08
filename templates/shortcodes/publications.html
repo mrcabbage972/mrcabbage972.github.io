@@ -26,6 +26,18 @@
                              and (pub.booktitle is not defined or not pub.booktitle)
                              and (pub.arxiv is defined and pub.arxiv)) %}
     {% set v = "" %}
+  {# link helpers #}
+{% set has_paper_url = pub.url is defined and pub.url %}
+{% set has_arxiv     = pub.arxiv is defined and pub.arxiv %}
+
+{# is the "paper" URL actually an arXiv URL? #}
+{% set url_is_arxiv = false %}
+{% if has_paper_url %}
+  {% if (has_arxiv and pub.url == pub.arxiv) or (pub.url is containing("arxiv.org")) %}
+    {% set url_is_arxiv = true %}
+  {% endif %}
+{% endif %}
+
     {% if pub.venue is defined and pub.venue %}{% set v = pub.venue %}
     {% elif pub.journal is defined and pub.journal %}{% set v = pub.journal %}
     {% elif pub.booktitle is defined and pub.booktitle %}{% set v = pub.booktitle %}
@@ -77,18 +89,21 @@
       </div>
 
       <div class="pub-links">
-        {% if is_preprint %}
-          {% if pub.arxiv %}
-            <a class="pub-badge" href="{{ pub.arxiv }}" target="_blank" rel="noopener">
-              <img src="https://img.shields.io/badge/arXiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv">
-            </a>
-          {% endif %}
-        {% else %}
-          {% if pub.url %}
-            <a class="pub-badge" href="{{ pub.url }}" target="_blank" rel="noopener">
-              <img src="https://img.shields.io/badge/Paper-%23d1495b.svg?style=flat-square&logo=readme&logoColor=white" alt="Paper">
-            </a>
-          {% endif %}
+        {# PREPRINTS: arXiv only (plus extras) #}
+  {% if is_preprint %}
+    {% if has_arxiv %}
+      <a class="pub-badge" href="{{ pub.arxiv }}" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/arXiv-B31B1B.svg?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv">
+      </a>
+    {% endif %}
+
+  {# PUBLISHED/ACCEPTED: show Paper unless it’s arXiv; still show arXiv when no camera-ready #}
+  {% else %}
+    {% if has_paper_url and not url_is_arxiv %}
+      <a class="pub-badge" href="{{ pub.url }}" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/badge/Paper-%23d1495b.svg?style=flat-square&logo=readme&logoColor=white" alt="Paper">
+      </a>
+    {% endif %}
           {% if pub.doi %}
             <a class="pub-badge" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">
               <img src="https://img.shields.io/badge/DOI-%23edae49.svg?style=flat-square&logo=doi&logoColor=white" alt="DOI">
