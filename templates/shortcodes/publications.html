@@ -121,6 +121,26 @@
             <img src="https://img.shields.io/badge/Twitter%20thread-1DA1F2.svg?style=flat-square&logo=twitter&logoColor=white" alt="Twitter thread">
           </a>
         {% endif %}
+        {% if pub.project %}
+          <a class="pub-badge" href="{{ pub.project }}" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Project-%233e3e3e.svg?style=flat-square&logo=googlechrome&logoColor=white" alt="Project page">
+          </a>
+        {% endif %}
+        {% if pub.dataset %}
+          <a class="pub-badge" href="{{ pub.dataset }}" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Dataset-%23edae49.svg?style=flat-square&logo=huggingface&logoColor=white" alt="Dataset">
+          </a>
+        {% endif %}
+        {% if pub.blog %}
+          <a class="pub-badge" href="{{ pub.blog }}" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Blog-%23edae49.svg?style=flat-square&logo=hashnode&logoColor=white" alt="Blog post">
+          </a>
+        {% endif %}
+        {% if pub.google_research %}
+          <a class="pub-badge" href="{{ pub.google_research }}" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Google%20Research-%23333333.svg?style=flat-square&logo=google&logoColor=white" alt="Google Research">
+          </a>
+        {% endif %}
       </div>
 
       {% if pub.abstract %}

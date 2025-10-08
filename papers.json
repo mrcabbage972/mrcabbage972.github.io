@@ -21,7 +21,7 @@
         "cs.SE",
         "cs.AI"
       ],
-      "venue": "NeurIPS 2025 Deep Learning for Code (DL4C) Workshop",
+      "venue": "NeurIPS Deep Learning for Code (DL4C) Workshop",
       "venue_url": "",
 
       "openreview": "",
@@ -65,10 +65,11 @@
   "twitter": "https://x.com/nizar_islah/status/1857423702175223994",
   "scholar": "https://scholar.google.com/scholar?q=GitChameleon%3A+Evaluating+AI+Code+Generation+Against+Python+Library+Version+Incompatibilities",
 
-  "venue": "NeurIPS 2025 Deep Learning for Code (DL4C) Workshop",
+  "venue": "NeurIPS Deep Learning for Code (DL4C) Workshop",
   "venue_url": "",
   "openreview": "",
-  "status": "accepted"
+  "status": "accepted",
+  "blog": "https://huggingface.co/blog/cabbage972/gitchameleon2"
 },
 
 
