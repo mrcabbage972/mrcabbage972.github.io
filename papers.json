@@ -1,5 +1,37 @@
 {
   "entries": {
+    "nguyen2025_mixturevitae": {
+      "bibtex-type": "article",
+      "title": "MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources",
+      "author": [
+        "Huu Nguyen",
+        "Victor May",
+        "Harsh Raj",
+        "Marianna Nezhurina",
+        "Yishan Wang",
+        "Yanqi Luo",
+        "Minh Chien Vu",
+        "Taishi Nakamura",
+        "Ken Tsui",
+        "Van Khue Nguyen",
+        "David Salinas",
+        "Aleksandra Krasnodębska",
+        "Christoph Schuhmann",
+        "Mats Leon Richter",
+        "Xuan-Son Vu",
+        "Jenia Jitsev"
+      ],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2509.25531",
+      "year": 2025,
+      "url": "https://openreview.net/forum?id=xuYhTNhE8w",
+      "arxiv": "https://arxiv.org/abs/2509.25531",
+      "github": "https://github.com/ontocord/mixturevitae",
+      "scholar": "https://scholar.google.com/scholar?q=MixtureVitae%3A+Open+Web-Scale+Pretraining+Dataset",
+      "status": "accepted"
+    },
+
+
     "may2025_freshbrew": {
       "bibtex-type": "article",
       "title": "FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration",
