@@ -28,7 +28,8 @@
       "arxiv": "https://arxiv.org/abs/2509.25531",
       "github": "https://github.com/ontocord/mixturevitae",
       "scholar": "https://scholar.google.com/scholar?q=MixtureVitae%3A+Open+Web-Scale+Pretraining+Dataset",
-      "status": "accepted"
+      "status": "accepted",
+      "venue": "ICLR 2026 Workshop DATA-FM"
     },
 
 
