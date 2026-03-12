@@ -14,7 +14,9 @@ template = "index.html"
 
 Hello, Internet.
 
-I’m a Staff Software Engineer at [Google Cloud](https://cloud.google.com), based in New York City, currently focused on AI for software engineering. Previously, I led a team at [Chegg](https://www.chegg.com) fine-tuning vision-language models (VLMs) for multimodal question answering. Before that, I worked on recommender systems and multilingual NLP at [Taboola](https://www.taboola.com/).
+I’m a Staff ML Engineer at [Google Cloud](https://cloud.google.com) by day, researcher by night, and working to close the gap between the two. My recent focus has been on AI agents for software engineering: from training to evals to getting them to work in production.
+
+Prior to joining Google, I led a team at [Chegg](https://www.chegg.com) fine-tuning vision-language models (VLMs) for multimodal question answering. Before that, I worked on recommender systems and multilingual NLP at [Taboola](https://www.taboola.com/).
 
 I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://english.tau.ac.il/) and a B.Sc. in Computer Science and Mathematics from [Bar-Ilan University](https://www.biu.ac.il/en).
 
