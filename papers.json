@@ -87,19 +87,17 @@
     "Antonio Orvieto","Muawiz Chaudhary","Eilif B. Muller","Irina Rish",
     "Samira Ebrahimi Kahou","Massimo Caccia"
   ],
-  "year": 2025,
-  "journal": "arXiv preprint",
+  "year": 2026,
   "volume": "arXiv:2507.12367",
   "url": "https://arxiv.org/abs/2507.12367",
   "arxiv": "https://arxiv.org/abs/2507.12367",
   "github": "https://github.com/mrcabbage972/GitChameleonBenchmark",
-  "blog": "https://huggingface.co/blog/cabbage972/gitchameleon2",
   "google_research": "https://research.google/pubs/gitchameleon-20-evaluating-ai-code-generation-against-python-library-version-incompatibilities/",
   "twitter": "https://x.com/nizar_islah/status/1857423702175223994",
   "scholar": "https://scholar.google.com/scholar?q=GitChameleon%3A+Evaluating+AI+Code+Generation+Against+Python+Library+Version+Incompatibilities",
 
-  "venue": "NeurIPS Deep Learning for Code (DL4C) Workshop",
-  "venue_url": "",
+  "venue": "ACL 2026 Main Track",
+  "venue_url": "https://2026.aclweb.org/",
   "openreview": "",
   "status": "accepted",
   "blog": "https://huggingface.co/blog/cabbage972/gitchameleon2"

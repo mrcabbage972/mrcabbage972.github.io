@@ -26,6 +26,8 @@ I contribute to open-source AI projects. Most recently, I collaborated with [Ont
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## News
+**April 2026**: Our Paper ```GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities``` had been accepted to ACL 2026 (Main Track).
+
 **March 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` had been accepted to the *Data-FM workshop at ICLR 2026*.
 
 **October 2025**: Our paper ```FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration``` had been accepted to *International Conference on Software Engineering (ICSE) 2026*.
