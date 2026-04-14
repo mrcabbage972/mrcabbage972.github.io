@@ -105,6 +105,25 @@
 
 
 
+    "may2026_interpreter_persistence": {
+      "bibtex-type": "article",
+      "title": "Agents Learn Their Runtime: Interpreter Persistence as Training-Time Semantics",
+      "author": [
+        "Victor May",
+        "Aaditya Salgarkar",
+        "Yishan Wang",
+        "Diganta Misra",
+        "Huu Nguyen"
+      ],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2603.01209",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2603.01209",
+      "arxiv": "https://arxiv.org/abs/2603.01209",
+      "primaryclass": "cs.AI",
+      "status": "preprint"
+    },
+
     "nakamura2025_auroraM": {
       "bibtex-type": "inproceedings",
       "title": "Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code",
