@@ -14,13 +14,13 @@ template = "index.html"
 
 Hello, Internet.
 
-I’m a Staff ML Engineer at [Google Cloud](https://cloud.google.com) by day, researcher by night, and working to close the gap between the two. My recent focus has been on AI agents for software engineering: from training to evals to getting them to work in production.
+I’m an ML Engineer at [Bridgewater AIA Labs](https://www.bridgewater.com/), where I work on training LLMs for forecasting. My research sits at the intersection of training data and model behavior: how data properties at each stage of the pipeline — from pretraining through agent fine-tuning — shape what models can and can’t do.
 
-Prior to joining Google, I led a team at [Chegg](https://www.chegg.com) fine-tuning vision-language models (VLMs) for multimodal question answering. Before that, I worked on recommender systems and multilingual NLP at [Taboola](https://www.taboola.com/).
+On the pretraining side, I’ve worked on [MixtureVitae](https://arxiv.org/abs/2509.25531), an open permissive-first corpus that matches non-permissive baselines at a fraction of the token budget (Accepted to [TMLR](https://jmlr.org/tmlr/) with Featured Certification). On the agent side, I study how training trace semantics affect deployed behavior, and build rigorous benchmarks for evaluating code agents in realistic settings ([FreshBrew](https://arxiv.org/abs/2510.04852) at [ICSE 2026](https://conf.researchr.org/home/icse-2026), [GitChameleon](https://arxiv.org/abs/2507.12367) at [ACL 2026](https://2026.aclweb.org/)).
+
+Prior to Bridgewater, I was a Staff ML Engineer at [Google Cloud](https://cloud.google.com), focused on AI agents for software engineering. Before that, I led a team at [Chegg](https://www.chegg.com) fine-tuning vision-language models, and worked on recommender systems and multilingual NLP at [Taboola](https://www.taboola.com/).
 
 I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://english.tau.ac.il/) and a B.Sc. in Computer Science and Mathematics from [Bar-Ilan University](https://www.biu.ac.il/en).
-
-I contribute to open-source AI projects. Most recently, I collaborated with [Ontocord](https://www.ontocord.ai/) on [Aurora-M](https://huggingface.co/blog/mayank-mishra/aurora), a multilingual large language model. I also participated in the [OpenAssistant](https://open-assistant.io/team) initiative by [LAION](https://laion.ai/).
 
 ### Links  
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
@@ -28,7 +28,7 @@ I contribute to open-source AI projects. Most recently, I collaborated with [Ont
 ## News
 **April 2026**: Our Paper ```GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities``` had been accepted to ACL 2026 (Main Track).
 
-**April 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` had been accepted to *Transactions on Machine Learning Research (TMLR)*.
+**April 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` had been accepted to *Transactions on Machine Learning Research (TMLR)* with Featured Certification.
 
 **March 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` had been accepted to the *Data-FM workshop at ICLR 2026*.
 
