@@ -21,7 +21,7 @@
         "Xuan-Son Vu",
         "Jenia Jitsev"
       ],
-      "journal": "arXiv preprint",
+      "journal": "Transactions on Machine Learning Research",
       "volume": "arXiv:2509.25531",
       "year": 2026,
       "url": "https://openreview.net/forum?id=xuYhTNhE8w",
@@ -29,7 +29,7 @@
       "github": "https://github.com/ontocord/mixturevitae",
       "scholar": "https://scholar.google.com/scholar?q=MixtureVitae%3A+Open+Web-Scale+Pretraining+Dataset",
       "status": "accepted",
-      "venue": "ICLR 2026 Workshop DATA-FM"
+      "venue": "Transactions on Machine Learning Research (TMLR)"
     },
 
 
