@@ -26,6 +26,10 @@ I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://englis
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## News
+**September 2026**: Our paper ```Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining``` has been accepted to *NeurIPS 2026* (Main Track).
+
+**May 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` received a J2C Certification at *TMLR* and was presented at *ICML 2026* through the Journal-to-Conference track.
+
 **April 2026**: Our Paper ```GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities``` had been accepted to ACL 2026 (Main Track).
 
 **April 2026**: Our paper ```MixtureVitae: Open Web-Scale Pretraining Dataset With High Quality Instruction and Reasoning Data Built from Permissive-First Text Sources``` had been accepted to *Transactions on Machine Learning Research (TMLR)* with Featured Certification.
