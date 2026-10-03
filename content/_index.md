@@ -14,13 +14,13 @@ template = "index.html"
 
 Hello, Internet.
 
-I’m an ML Engineer at [Bridgewater AIA Labs](https://www.bridgewater.com/), where I train LLMs for forecasting. My work spans two connected areas: building and evaluating code agents, and developing open language models and the data used to train them.
+I’m an ML Engineer at [Bridgewater AIA Labs](https://www.bridgewater.com/), where I train LLMs for forecasting. My recent work spans two connected areas: building and evaluating code agents, and developing open language models and the data used to train them.
 
 ### Building and evaluating code agents
 
 At [Google Cloud](https://cloud.google.com), I was a Staff ML Engineer working on agents for software engineering. I was responsible for evaluating a Java migration agent, and that work became [FreshBrew](https://arxiv.org/abs/2510.04852) ([ICSE 2026](https://conf.researchr.org/home/icse-2026)), a benchmark for migrating real Java projects. I also co-authored [GitChameleon 2.0](https://arxiv.org/abs/2507.12367) ([ACL 2026](https://2026.aclweb.org/)), which tests whether generated code works with the Python library versions a task actually requires.
 
-I later worked on [Gemini CLI](https://github.com/google-gemini/gemini-cli), implementing [parts of its core agent logic](https://github.com/google-gemini/gemini-cli/pulls?q=is%3Apr+author%3Amrcabbage972+is%3Amerged) and routing between Gemini Pro and Flash. The routing was supported by an evaluation framework I developed. I also collaborated with Google DeepMind on software-engineering task environments and evaluations for Gemini.
+I later worked on [Gemini CLI](https://github.com/google-gemini/gemini-cli), implementing [parts of its core agent logic](https://github.com/google-gemini/gemini-cli/pulls?q=is%3Apr+author%3Amrcabbage972+is%3Amerged) and query routing between Gemini Pro and Flash. The routing was supported by an evaluation framework I developed. I also collaborated with Google DeepMind on software-engineering task environments and evaluations for Gemini.
 
 Working on Gemini CLI meant seeing how each new model version interacted with the surrounding harness. That experience led to [Evaluating Agents Across Runtime Contracts](https://arxiv.org/abs/2603.01209), accepted to the IAEval workshop at NeurIPS 2026. The paper studies how agents learn assumptions about their execution environment during training, and when breaking those assumptions at deployment leads to wasted computation or task failure.
 
