@@ -81,7 +81,7 @@
 
     "misra2025_gitchameleon": {
   "bibtex-type": "article",
-  "title": "GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
+  "title": "GitChameleon 2.0: Evaluating AI Code Generation Against Python Library Version Incompatibilities",
   "author": [
     "Diganta Misra","Nizar Islah","Victor May","Brice Rauby","Zihan Wang","Justine Gehring",
     "Antonio Orvieto","Muawiz Chaudhary","Eilif B. Muller","Irina Rish",
@@ -107,21 +107,22 @@
 
     "may2026_interpreter_persistence": {
       "bibtex-type": "article",
-      "title": "Agents Learn Their Runtime: Interpreter Persistence as Training-Time Semantics",
+      "title": "Evaluating Agents Across Runtime Contracts: When Mismatch Costs Efficiency or Quality",
       "author": [
         "Victor May",
+        "Van Khue Nguyen",
         "Aaditya Salgarkar",
         "Yishan Wang",
         "Diganta Misra",
         "Huu Nguyen"
       ],
-      "journal": "arXiv preprint",
       "volume": "arXiv:2603.01209",
       "year": 2026,
       "url": "https://arxiv.org/abs/2603.01209",
       "arxiv": "https://arxiv.org/abs/2603.01209",
       "primaryclass": "cs.AI",
-      "status": "preprint"
+      "venue": "IAEval: NeurIPS 2026 Workshop on Evaluation of Interactive Agents",
+      "status": "accepted"
     },
 
     "nakamura2025_auroraM": {
