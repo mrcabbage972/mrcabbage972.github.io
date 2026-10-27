@@ -22,7 +22,8 @@
     {% endif %}
 
     {% set is_preprint = (pub.status is defined and pub.status == "preprint")
-                         or ((pub.journal is not defined or not pub.journal)
+                         or ((pub.status is not defined or pub.status != "accepted")
+                             and (pub.journal is not defined or not pub.journal)
                              and (pub.booktitle is not defined or not pub.booktitle)
                              and (pub.arxiv is defined and pub.arxiv)) %}
     {% set v = "" %}
