@@ -125,6 +125,31 @@
       "status": "accepted"
     },
 
+    "nezhurina2026_opensciref002": {
+      "bibtex-type": "article",
+      "title": "Open-sci-ref-0.02: Open Reference Baselines for Reproducible Language Model and Dataset Comparison",
+      "author": [
+        "Marianna Nezhurina",
+        "Harsh Raj",
+        "Victor May",
+        "Jörg Franke",
+        "Taishi Nakamura",
+        "Timur Carstensen",
+        "Niccolò Ajroldi",
+        "Ville Komulainen",
+        "David Salinas",
+        "Jenia Jitsev"
+      ],
+      "journal": "arXiv preprint",
+      "volume": "arXiv:2509.09009",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2509.09009",
+      "arxiv": "https://arxiv.org/abs/2509.09009",
+      "github": "https://github.com/LAION-AI/open-sci-ref-0.02",
+      "primaryclass": "cs.LG",
+      "status": "preprint"
+    },
+
     "nakamura2025_auroraM": {
       "bibtex-type": "inproceedings",
       "title": "Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code",

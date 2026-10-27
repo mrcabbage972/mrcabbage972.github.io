@@ -42,6 +42,8 @@ I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://englis
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## News
+**October 2026**: Our preprint ```Open-sci-ref-0.02: Open Reference Baselines for Reproducible Language Model and Dataset Comparison``` is out on [arXiv](https://arxiv.org/abs/2509.09009), with [code](https://github.com/LAION-AI/open-sci-ref-0.02) and [model checkpoints](https://huggingface.co/collections/open-sci/open-sci-ref-002) released.
+
 **October 2026**: Our paper ```Evaluating Agents Across Runtime Contracts``` has been accepted to IAEval, the *NeurIPS 2026 Workshop on Evaluation of Interactive Agents*.
 
 **September 2026**: Our paper ```Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining``` has been accepted to *NeurIPS 2026* (Main Track).
