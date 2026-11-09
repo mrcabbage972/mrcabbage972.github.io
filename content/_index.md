@@ -42,6 +42,8 @@ I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://englis
 [Google Scholar](https://scholar.google.com/citations?user=6yT0YfgAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/victor-m-88340822) | [Resume](media/resume.pdf) | [X (Twitter)](https://x.com/MrColeslaw972)
 
 ## News
+**November 2026**: Released [corpus-assay 0.2.0](https://github.com/mrcabbage972/corpus-assay/releases/tag/v0.2.0), a tool for benchmark decontamination of LLM pretraining data, now with a `filter` command that writes cleaned shards and a pinned registry of evaluation benchmarks (MMLU, GSM8K, HellaSwag, HumanEval, AIME and more), also on [Hugging Face](https://huggingface.co/datasets/cabbage972/corpus-assay-benchmark-registry).
+
 **October 2026**: Our preprint ```Open-sci-ref-0.02: Open Reference Baselines for Reproducible Language Model and Dataset Comparison``` is out on [arXiv](https://arxiv.org/abs/2509.09009), with [code](https://github.com/LAION-AI/open-sci-ref-0.02) and [model checkpoints](https://huggingface.co/collections/open-sci/open-sci-ref-002) released.
 
 **October 2026**: Our paper ```Evaluating Agents Across Runtime Contracts``` has been accepted to IAEval, the *NeurIPS 2026 Workshop on Evaluation of Interactive Agents*.
@@ -63,7 +65,7 @@ I hold an M.Sc. in Applied Mathematics from [Tel Aviv University](https://englis
 
 ## Software
 
-**[corpus-assay](https://github.com/mrcabbage972/corpus-assay)**: Audit benchmark overlap in LLM training corpora. A Python library and command-line tool with Rust-accelerated scanning, attribution to individual benchmark items, and reproducible scan records. Built out of the decontamination work behind MixtureVitae.
+**[corpus-assay](https://github.com/mrcabbage972/corpus-assay)**: Benchmark decontamination for LLM pretraining data. Finds evaluation-benchmark text in training corpora and writes cleaned shards. A Python library and command-line tool with Rust-accelerated scanning, attribution to individual benchmark items, and reproducible scan records. Built out of the decontamination work behind MixtureVitae. [PyPI](https://pypi.org/project/corpus-assay/) | [Benchmark registry on Hugging Face](https://huggingface.co/datasets/cabbage972/corpus-assay-benchmark-registry)
 
 ## Publications
 {{ publications() }}
